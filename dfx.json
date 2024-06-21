@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "atlist_backend": {
+      "candid": "src/atlist_backend/atlist_backend.did",
+      "package": "atlist_backend",
+      "type": "rust"
+    },
+    "atlist_frontend": {
+      "dependencies": [
+        "atlist_backend"
+      ],
+      "source": [
+        "src/atlist_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "atlist_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
